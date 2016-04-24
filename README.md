@@ -2,7 +2,7 @@
 
 ![Alt text](/screenshot.png?raw=true)
 
-[ ![Download](https://api.bintray.com/packages/dasar/maven/shiftcolorpicker/images/download.svg) ](https://bintray.com/dasar/maven/shiftcolorpicker/_latestVersion)
+[![Download](https://api.bintray.com/packages/dasar/maven/shiftcolorpicker/images/download.svg)](https://bintray.com/dasar/maven/shiftcolorpicker/_latestVersion)
 
 ##Usage
 
@@ -48,16 +48,14 @@ int color = colorPicker.getColor();
 
 ###Gradle
 ```gradle
-repositories {
-     maven {
-        url  "http://dl.bintray.com/dasar/maven"
-     }
-}
 
-compile(group: 'uz.shift', name: 'colorpicker', version: '0.5', ext: 'aar')
+
+
+
+
 ```
 
-###[Releases page](https://github.com/DASAR/ShiftColorPicker/releases) 
+###[Releases page](https://github.com/HKMOpen/ShiftColorPicker/releases) 
 or grab latest version from repository.
 
 ##Requirements

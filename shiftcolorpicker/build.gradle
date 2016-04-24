@@ -1,24 +1,26 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 22
+        versionCode project.VERSION_CODE as int
+        versionName project.VERSION_NAME
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION as int
     }
-
     buildTypes {
         release {
             minifyEnabled false
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
     }
 }
 
+
 dependencies {
-    compile 'com.android.support:support-v4:22.1.1'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile supportDependencies.support
 }

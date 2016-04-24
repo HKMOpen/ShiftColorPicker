@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
         applicationId "uz.shift.colorpicker.demo"
-        minSdkVersion 9
-        targetSdkVersion 22
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION as int
+
     }
 
     buildTypes {
@@ -19,6 +20,7 @@ android {
 }
 
 dependencies {
+    compile supportDependencies.appCompat
+    compile supportDependencies.design
     compile project(':shiftcolorpicker')
-    compile 'com.android.support:support-v4:22.2.1'
 }

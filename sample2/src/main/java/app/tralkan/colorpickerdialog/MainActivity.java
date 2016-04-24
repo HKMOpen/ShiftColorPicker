@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  implements ColorChooserFragment.DialogListener{
+public class MainActivity extends AppCompatActivity implements ColorChooserFragment.DialogListener{
 
     private ColorChooserFragment fragment;
     private FragmentManager fm = getSupportFragmentManager();

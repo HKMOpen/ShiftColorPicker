@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
         applicationId "app.tralkan.colorpickerdialog"
-        minSdkVersion 14
-        targetSdkVersion 22
+
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION as int
+
         versionCode 1
         versionName "1.0"
     }
@@ -19,14 +21,10 @@ android {
     }
 }
 
-repositories {
-    maven {
-        url  "http://dl.bintray.com/dasar/maven"
-    }
-}
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile(group: 'uz.shift', name: 'colorpicker', version: '0.5', ext: 'aar')
+    compile supportDependencies.appCompat
+    compile supportDependencies.design
+    //compile(group: 'uz.shift', name: 'colorpicker', version: '0.5', ext: 'aar')
+    compile project(':shiftcolorpicker')
 }
