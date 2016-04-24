@@ -1,6 +1,4 @@
-##Simple vertical and horizontal color picker
-
-![Alt text](/screenshot.png?raw=true)
+##SHIT Color Pickr vertical and horizontal color picker
 
 [ ![Download](https://api.bintray.com/packages/jjhesk/maven/shitcolorpickr/images/download.svg) ](https://bintray.com/jjhesk/maven/shitcolorpickr/_latestVersion)
 
@@ -62,6 +60,10 @@ Android 13 and later.
 * Expand/collapse animations
 * More color pickers in different styles
 * rounded corners for line picker
+
+
+![Alt text](/screenshot.png?raw=true)
+
 
 ##License
 
