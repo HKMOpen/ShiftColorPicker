@@ -59,7 +59,6 @@ public class LetterPicker extends LineColorPicker {
                 str = item_array;
             }
 
-
             mTagMaxLength = a.getInt(R.styleable.LetterPicker_item_max_text_length, mTagMaxLength);
             mTextNormalColor = a.getColor(R.styleable.LetterPicker_normal_text_color,
                     Color.BLACK);

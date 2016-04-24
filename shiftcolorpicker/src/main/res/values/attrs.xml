@@ -16,8 +16,8 @@
         <attr name="fontname" format="string" />
         <attr name="string_array" format="reference" />
         <attr name="item_max_text_length" format="integer" />
-        <attr name="selected_drawable" format="reference" />
-        <attr name="unselected_drawable" format="reference" />
+        <attr name="lpo_selected_drawable" format="reference" />
+        <attr name="lpo_unselected_drawable" format="reference" />
         <attr name="selected_text_color" format="color" />
         <attr name="normal_text_color" format="color" />
         <attr name="text_size" format="dimension" />
