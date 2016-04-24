@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 updateLabel(label);
             }
         });
+        mletterpicker.setSelectedColorPosition(2);
     }
 
 
