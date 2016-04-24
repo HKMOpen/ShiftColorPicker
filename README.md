@@ -48,11 +48,7 @@ int color = colorPicker.getColor();
 
 ###Gradle
 ```gradle
-
-
-
-
-
+    compile 'com.hkm.ui:shitcolorpickr:1.5.0'
 ```
 
 ###[Releases page](https://github.com/HKMOpen/ShiftColorPicker/releases) 

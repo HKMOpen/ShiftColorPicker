@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ColorPicker Dialog</string>
     <string name="msg_select_color">Select a color</string>
+
 </resources>

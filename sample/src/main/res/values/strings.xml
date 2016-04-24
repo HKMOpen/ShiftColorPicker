@@ -3,4 +3,12 @@
 
     <string name="app_name">ShiftColorPicker</string>
 
+    <string-array name="listname">
+        <item>A+</item>
+        <item>F5+</item>
+        <item>E+</item>
+        <item>E+</item>
+        <item>V3+</item>
+        <item>M+</item>
+    </string-array>
 </resources>

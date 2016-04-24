@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="colorPrimary">#9564ff</color>
+    <color name="colorPrimaryDark">#34566c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_white">#e1ccd3</color>
+    <color name="color_white_w">#c69caa</color>
+    <color name="color_white_02">#f7d8e3</color>
+    <color name="color_white_04">#e5f2ff</color>
+    <color name="color_white_03">#409af4</color>
+    <color name="color_white_05">#113f6c</color>
+
     <color name="color_0">#f44336</color>
     <color name="color_1">#ff9800</color>
     <color name="color_2">#ffeb3b</color>
@@ -17,6 +27,25 @@
         <item>@color/color_4</item>
         <item>@color/color_5</item>
         <item>@color/color_6</item>
+    </integer-array>
+
+
+    <integer-array name="sample_color2">
+        <item>@color/color_0</item>
+        <item>@color/color_1</item>
+        <item>@color/color_3</item>
+        <item>@color/color_6</item>
+    </integer-array>
+
+    <integer-array name="sample_color3">
+        <item>@color/color_0</item>
+        <item>@color/color_1</item>
+        <item>@color/color_3</item>
+        <item>@color/color_4</item>
+        <item>@color/color_5</item>
+        <item>@color/color_6</item>
+        <item>@color/color_1</item>
+        <item>@color/color_2</item>
     </integer-array>
 
 </resources>

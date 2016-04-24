@@ -1,56 +1,88 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@drawable/ckground"
     tools:context="uz.shift.colorpicker.demo.MainActivity">
 
-    <TextView
-        android:id="@+id/textViewColor"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/picker"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:text="" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <uz.shift.colorpicker.LineColorPicker
-        android:id="@+id/picker"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="48dp"
-        app:orientation="horizontal" />
+        <uz.shift.colorpicker.LetterPicker
+            android:id="@+id/pickercal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:fontname="Montserrat-Regular.ttf"
+            app:item_max_text_length="12" />
 
-    <uz.shift.colorpicker.LineColorPicker
-        android:id="@+id/picker2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="50dp"
-        app:orientation="horizontal" />
-
-    <uz.shift.colorpicker.LineColorPicker
-        android:layout_width="match_parent"
-        android:layout_height="60dip"
-        android:id="@+id/picker3"
-        app:selectedColorIndex="3"
-        app:colors="@array/sample_colors"/>
-
-    <!--<uz.shift.colorpicker.LineColorPicker-->
-        <!--android:id="@+id/picker3"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="20dp"-->
-        <!--android:layout_marginTop="50dp"-->
-        <!--app:orientation="horizontal" />-->
-
-    <!--<uz.shift.colorpicker.LineColorPicker-->
-        <!--android:id="@+id/picker4"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="10dp"-->
-        <!--android:layout_marginTop="50dp"-->
-        <!--app:orientation="horizontal" />-->
+        <uz.shift.colorpicker.LetterPicker
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:alpha="0.7"
+            app:colors="@array/sample_color2"
+            app:fontname="Montserrat-Regular.ttf"
+            app:item_max_text_length="12" />
 
 
-</LinearLayout>
+        <uz.shift.colorpicker.LetterPicker
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:colors="@array/sample_color3"
+            app:fontname="Montserrat-Regular.ttf"
+            app:item_max_text_length="6"
+            app:string_array="@array/listname"
+            app:text_size="18sp" />
+
+
+        <TextView
+            android:id="@+id/textViewColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="XXX" />
+
+        <uz.shift.colorpicker.LineColorPicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
+            app:orientation="horizontal" />
+
+        <uz.shift.colorpicker.LineColorPicker
+            android:id="@+id/picker2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            app:orientation="horizontal" />
+
+        <uz.shift.colorpicker.LineColorPicker
+            android:id="@+id/picker3"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            app:colors="@array/sample_colors"
+            app:selectedColorIndex="3" />
+
+        <uz.shift.colorpicker.LineColorPicker
+            android:id="@+id/picker4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            app:colors="@array/sample_color2"
+            app:orientation="horizontal" />
+
+        <uz.shift.colorpicker.LineColorPicker
+            android:id="@+id/picker5"
+            android:layout_width="30dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            app:colors="@array/sample_color2"
+            app:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>
