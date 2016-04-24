@@ -2,7 +2,7 @@
 
 ![Alt text](/screenshot.png?raw=true)
 
-[![Download](https://api.bintray.com/packages/dasar/maven/shiftcolorpicker/images/download.svg)](https://bintray.com/dasar/maven/shiftcolorpicker/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/jjhesk/maven/shitcolorpickr/images/download.svg) ](https://bintray.com/jjhesk/maven/shitcolorpickr/_latestVersion)
 
 ##Usage
 
@@ -56,7 +56,7 @@ or grab latest version from repository.
 
 ##Requirements
 
-Android 2.3 (Gingerbread) and later.
+Android 13 and later.
 
 ##Todo
 * Expand/collapse animations
@@ -67,4 +67,5 @@ Android 2.3 (Gingerbread) and later.
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Bogdasarov Bogdan
+Copyright (c) 2015 Bogdasarov Bogdan 
+Copyright (c) 2016 OPENHKM
